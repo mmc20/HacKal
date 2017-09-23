@@ -33,7 +33,7 @@
             <h1 class="cover-heading">HacKal</h1>
             <p class="lead">Welcome to HacKal. I'm not quite sure what this is.</p>
             <p class="lead">
-              <a id = "start_button"href="calendar.html" class="btn btn-lg btn-outline-secondary">Sign In</a>
+              <button onclick="signInWithRedirect(provider)">Sign In</button>
             </p>
           </div>
 
@@ -54,6 +54,20 @@
 
 
 
+	
+<script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyChk2P0D-9bcUXZZQAurXfwnMCXnmvAF60",
+    authDomain: "hackal-608cf.firebaseapp.com",
+    databaseURL: "https://hackal-608cf.firebaseio.com",
+    projectId: "hackal-608cf",
+    storageBucket: "hackal-608cf.appspot.com",
+    messagingSenderId: "473729330827"
+  };
+  firebase.initializeApp(config);
+</script>
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="../../../../assets/js/vendor/popper.min.js"></script>
